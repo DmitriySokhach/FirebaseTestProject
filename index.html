@@ -1,1 +1,50 @@
-"My Page" 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB8aDGPwl5B63_n0Lw6FDyF13gQKOK2c0M",
+            authDomain: "fir-testproject-28773.firebaseapp.com",
+            databaseURL: "https://fir-testproject-28773.firebaseio.com",
+            storageBucket: "fir-testproject-28773.appspot.com",
+        };
+        firebase.initializeApp(config);
+
+        function getFromDb() {
+
+        }
+    </script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="form-group">
+        <label for="focusedInput">Data to push: </label>
+        <input class="form-control" id="focusedInput" type="text">
+        <button type="button" class="btn btn-default" onclick="">Add data to db</button>
+    </div>
+
+    <button type="button" class="btn btn-default">Get from DB</button>
+
+</body>
+
+</html>
