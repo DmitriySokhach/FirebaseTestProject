@@ -12,10 +12,9 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css" />
 
-
-
-    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js" />
     <script>
         // Initialize Firebase
         var config = {
@@ -25,9 +24,13 @@
             storageBucket: "fir-testproject-28773.appspot.com",
         };
         firebase.initializeApp(config);
+    </script>
 
-        function getFromDb() {
-
+    <script type="text/javascript"> 
+        
+        function addToDb() {
+            var db = firebase.database();
+            db.log();
         }
     </script>
 </head>
@@ -40,11 +43,15 @@
     <div class="form-group">
         <label for="focusedInput">Data to push: </label>
         <input class="form-control" id="focusedInput" type="text">
-        <button type="button" class="btn btn-default" onclick="">Add data to db</button>
+        <button type="button" class="btn btn-default" onclick="addToDb()">Add data to db</button>
     </div>
 
     <button type="button" class="btn btn-default">Get from DB</button>
 
 </body>
+<script src="./lib/jquery.min.js" />
+<script src="./lib/bootstrap.min.js" />
+
+
 
 </html>
